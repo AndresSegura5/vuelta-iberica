@@ -182,7 +182,7 @@
 
   /* ───── Rutas reales por carretera (OSRM) ───── */
   async function fetchRoute(d) {
-    const key = 'vi-osrm2-' + d.n + '-' + d.route.map(p => p.join(',')).join('|').length;
+    const key = 'vi-osrm3-' + d.n + '-' + d.route.map(p => p.join(',')).join('|').length;
     try { const c = localStorage.getItem(key); if (c) return JSON.parse(c); } catch (e) {}
     const q = d.route.map(p => p[1] + ',' + p[0]).join(';');
     const r = await fetch(`https://router.project-osrm.org/route/v1/driving/${q}?overview=full&geometries=geojson`);

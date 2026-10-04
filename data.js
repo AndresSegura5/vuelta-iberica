@@ -42,101 +42,99 @@ window.TRIP = {
       ]
     },
     {
-      n: 4, date: "Mar 13", from: "Lisboa", to: "Óbidos", country: "Portugal",
-      km: 135, h: 2.2, tag: "Sintra y villa medieval",
-      route: [[38.7223,-9.1393],[38.7979,-9.3881],[39.3606,-9.1572]],
-      night: { name: "Óbidos", coords: [39.3606,-9.1572], note: "Área de autocaravanas junto a la muralla (a confirmar) o camping cercano en la Lagoa de Óbidos." },
-      summary: "Sintra por la mañana y villa amurallada de Óbidos al caer la tarde. Sintra es el único punto complicado para autocaravanas: carreteras estrechas y aparcamiento escaso.",
-      stops: [
-        { t: "09:00", name: "Palácio da Pena", coords: [38.7876,-9.3904], text: "El palacio de colores sobre la sierra. Compra la entrada con hora asignada para evitar esperas.", tip: "No subas con la autocaravana: déjala fuera y usa tren o bus 434 desde la estación de Sintra." },
-        { t: "12:30", name: "Quinta da Regaleira", coords: [38.7963,-9.3958], text: "Jardines con pozo iniciático y túneles. Casco histórico de Sintra para comer." },
-        { t: "17:30", name: "Óbidos", coords: [39.3606,-9.1572], text: "Calle Direita, castillo-pousada y el paseo por la muralla. Ginjinha servida en vasito de chocolate." }
-      ]
-    },
-    {
-      n: 5, date: "Mié 14", from: "Óbidos", to: "Aveiro", country: "Portugal",
-      km: 215, h: 3.0, tag: "Alcobaça · Nazaré · Aveiro",
-      route: [[39.3606,-9.1572],[39.5473,-8.9783],[39.6012,-9.0707],[40.6405,-8.6538]],
-      night: { name: "Aveiro", coords: [40.6405,-8.6538], note: "Área de autocaravanas de Aveiro o camping en la costa (São Jacinto / Barra). Confirmar." },
-      summary: "Costa de plata portuguesa: un monasterio UNESCO, el pueblo de pescadores de Nazaré y la 'Venecia portuguesa'.",
-      stops: [
-        { t: "10:00", name: "Mosteiro de Alcobaça", coords: [39.5473,-8.9783], text: "Obra maestra del gótico cisterciense (UNESCO) con las tumbas de Pedro e Inês." },
-        { t: "12:30", name: "Nazaré · Sítio y Forte", coords: [39.6050,-9.0766], text: "Mirador del Sítio y faro del Forte de São Miguel Arcanjo, donde rompen las olas gigantes. Pescado a la parrilla en el paseo.", tip: "En octubre ya puede haber oleaje grande: revisa el parte de olas." },
-        { t: "17:30", name: "Aveiro", coords: [40.6405,-8.6538], text: "Canales con barcos moliceiros, fachadas Art Nouveau y los ovos moles." }
-      ]
-    },
-    {
-      n: 6, date: "Jue 15", from: "Aveiro", to: "Oporto", country: "Portugal",
-      km: 80, h: 1.2, tag: "Oporto, día completo",
-      route: [[40.6405,-8.6538],[41.1579,-8.6291]],
+      n: 4, date: "Mar 13", from: "Lisboa", to: "Oporto", country: "Portugal",
+      km: 320, h: 3.6, tag: "Coimbra y llegada a Oporto",
+      route: [[38.7223,-9.1393],[40.2033,-8.4103],[41.1579,-8.6291]],
       night: { name: "Oporto / Gaia", coords: [41.1383,-8.6165], note: "Camping de Oporto (p. ej. Prelada) o camping en Vila Nova de Gaia (a confirmar)." },
-      summary: "Trayecto corto: llegas a media mañana y tienes todo el día. Deja la autocaravana en el camping y entra en transporte público.",
+      summary: "Salida temprano de Lisboa por la A-1, parada en Coimbra y tarde en Oporto. Es la única etapa larga de Portugal.",
       stops: [
-        { t: "11:00", name: "Estación de São Bento y Sé", coords: [41.1456,-8.6105], text: "Los azulejos monumentales de São Bento y la catedral con vistas sobre el Duero." },
-        { t: "13:30", name: "Livraria Lello y Torre dos Clérigos", coords: [41.1468,-8.6150], text: "Librería neogótica y torre barroca para subir a las vistas.", tip: "La Lello exige entrada con hora: reserva online antes." },
-        { t: "16:30", name: "Ribeira y Ponte Luís I", coords: [41.1405,-8.6137], text: "Paseo por la Ribeira y cruce del puente de dos niveles hasta las bodegas de Gaia." },
+        { t: "11:00", name: "Coimbra: Universidade", coords: [40.2074,-8.4257], text: "Universidad histórica (UNESCO) con la Biblioteca Joanina y vistas sobre el Mondego. Comida en el casco antiguo.", tip: "Sube a la universidad a pie desde la zona baja: no hay sitio para autocaravanas arriba." },
+        { t: "16:00", name: "Ribeira y Ponte Luís I", coords: [41.1405,-8.6137], text: "Primer paseo por la Ribeira y cruce del puente de dos niveles hasta Gaia." },
         { t: "18:00", name: "Bodegas de Vila Nova de Gaia", coords: [41.1383,-8.6165], text: "Cata de vino de Oporto con vistas al atardecer." }
       ]
     },
     {
-      n: 7, date: "Vie 16", from: "Oporto", to: "Braga", country: "Portugal",
-      km: 110, h: 1.8, tag: "Guimarães y Braga",
-      route: [[41.1579,-8.6291],[41.4416,-8.2918],[41.5454,-8.4265]],
-      night: { name: "Braga", coords: [41.5454,-8.4265], note: "Área de autocaravanas / camping cerca de Braga (a confirmar). Última noche en Portugal." },
-      summary: "Las dos joyas del norte portugués: Guimarães, 'cuna de Portugal', y Braga, ciudad barroca y religiosa.",
-      stops: [
-        { t: "10:30", name: "Guimarães", coords: [41.4477,-8.2903], text: "Castillo, Paço dos Duques y centro medieval (UNESCO). Plaza Santiago y Largo da Oliveira." },
-        { t: "15:00", name: "Bom Jesus do Monte", coords: [41.5549,-8.3775], text: "Santuario con la famosa escalinata barroca y vistas sobre Braga. Se puede subir en funicular.", tip: "Si llegas en autocaravana, aparca en la parte baja y sube en funicular o taxi." },
-        { t: "18:00", name: "Sé de Braga y centro", coords: [41.5503,-8.4272], text: "Catedral más antigua de Portugal y paseo por el centro peatonal." }
-      ]
-    },
-    {
-      n: 8, date: "Sáb 17", from: "Braga", to: "Santiago", country: "Portugal → España",
-      km: 195, h: 2.6, tag: "Santiago de Compostela",
-      route: [[41.5454,-8.4265],[42.0306,-8.6431],[42.8805,-8.5457]],
+      n: 5, date: "Mié 14", from: "Oporto", to: "Santiago", country: "Portugal → España",
+      km: 240, h: 3.2, tag: "Despedida de Portugal",
+      route: [[41.1579,-8.6291],[42.0306,-8.6431],[42.8805,-8.5457]],
       night: { name: "Santiago de Compostela", coords: [42.8805,-8.5457], note: "Camping As Cancelas, a pocos minutos del casco histórico (confirmar apertura en octubre)." },
-      summary: "Cruzas la frontera por Valença do Minho y entras en Galicia. En España hay que adelantar el reloj una hora. Tarde completa en la meta del Camino.",
+      summary: "Mañana en Oporto, salida a mediodía y entrada en Galicia por Valença/Tui. En España hay que adelantar el reloj una hora. Tarde de llegada a Santiago.",
       stops: [
-        { t: "10:30", name: "Valença do Minho", coords: [42.0306,-8.6431], text: "Fortaleza amurallada sobre el Miño, frente a Tui. Parada perfecta para despedirse de Portugal." },
-        { t: "15:30", name: "Plaza del Obradoiro y Catedral", coords: [42.8806,-8.5446], text: "La Catedral abre todos los días de 07:00 a 21:00 y la entrada es gratuita. Visita el Sepulcro del Apóstol y el abrazo al Santo.", tip: "El Pórtico de la Gloria requiere reserva. La Misa del Peregrino es a las 12:00 y 19:30." },
-        { t: "18:30", name: "Casco histórico", coords: [42.8809,-8.5436], text: "Rúa do Franco, Praza das Praterías, Alameda al atardecer y cena de pulpo o empanada." }
+        { t: "09:30", name: "São Bento, Lello y Clérigos", coords: [41.1468,-8.6150], text: "Azulejos de São Bento, Livraria Lello y subida a la Torre dos Clérigos.", tip: "La Lello exige entrada con hora: reserva online antes." },
+        { t: "13:30", name: "Valença do Minho", coords: [42.0306,-8.6431], text: "Fortaleza amurallada sobre el Miño, frente a Tui. Comida y despedida de Portugal." },
+        { t: "17:30", name: "Plaza del Obradoiro y Catedral", coords: [42.8806,-8.5446], text: "La Catedral abre todos los días de 07:00 a 21:00 y la entrada es gratuita. Visita el Sepulcro del Apóstol y el abrazo al Santo.", tip: "El Pórtico de la Gloria requiere reserva. La Misa del Peregrino es a las 12:00 y 19:30." },
+        { t: "20:00", name: "Casco histórico", coords: [42.8809,-8.5436], text: "Rúa do Franco, Praza das Praterías y cena de pulpo o empanada." }
       ]
     },
     {
-      n: 9, date: "Dom 18", from: "Santiago", to: "Ribadeo", country: "España · Galicia",
-      km: 195, h: 2.6, tag: "Costa de los Mares",
-      route: [[42.8805,-8.5457],[43.0097,-7.5568],[43.5352,-7.0420]],
-      night: { name: "Ribadeo", coords: [43.5352,-7.0420], note: "Área de autocaravanas o camping en la ría de Ribadeo (a confirmar)." },
-      summary: "Mañana de despedida en Santiago (Mercado de Abastos, misa) y tarde en As Catedrais, uno de los espectáculos naturales más bellos del norte.",
+      n: 6, date: "Jue 15", from: "Santiago", to: "Fisterra", country: "España · Galicia",
+      km: 95, h: 1.7, tag: "Fin del mundo",
+      route: [[42.8805,-8.5457],[42.9061,-9.2635]],
+      night: { name: "Fisterra", coords: [42.9061,-9.2635], note: "Área de autocaravanas o camping en Fisterra / Sardiñeiro (a confirmar)." },
+      summary: "Mañana tranquila en Santiago y tarde en la Costa da Morte, para ver el atardecer en el faro de Fisterra, el fin del mundo del Camino.",
       stops: [
-        { t: "09:00", name: "Mercado de Abastos y Misa del Peregrino", coords: [42.8820,-8.5420], text: "Desayuno en el mercado y última vuelta al Obradoiro. La misa del peregrino es a las 12:00." },
-        { t: "13:30", name: "Lugo (opcional)", coords: [43.0097,-7.5568], text: "Muralla romana (UNESCO) para estirar las piernas. Parada de comida en ruta." },
+        { t: "09:30", name: "Mercado de Abastos y Pórtico de la Gloria", coords: [42.8820,-8.5420], text: "Desayuno en el mercado y, si has reservado, visita al Pórtico de la Gloria. Misa del peregrino a las 12:00." },
+        { t: "15:30", name: "Muxía (opcional)", coords: [43.1056,-9.2166], text: "Santuario de la Virxe da Barca sobre el mar. Solo si vas bien de tiempo." },
+        { t: "18:30", name: "Faro de Fisterra", coords: [42.8827,-9.2736], text: "Kilómetro 0 del Camino y atardecer sobre el Atlántico.", tip: "Llega con tiempo para aparcar y volver con luz." }
+      ]
+    },
+    {
+      n: 7, date: "Vie 16", from: "Fisterra", to: "Ribadeo", country: "España · Galicia",
+      km: 280, h: 3.7, tag: "Praia das Catedrais",
+      route: [[42.9061,-9.2635],[43.0097,-7.5568],[43.5352,-7.0420]],
+      night: { name: "Ribadeo", coords: [43.5352,-7.0420], note: "Área de autocaravanas o camping en la ría de Ribadeo (a confirmar)." },
+      summary: "Cruzas Galicia de oeste a este. Parada en Lugo y llegada a Ribadeo con tiempo para As Catedrais, uno de los espectáculos naturales más bellos del norte.",
+      stops: [
+        { t: "13:00", name: "Lugo", coords: [43.0097,-7.5568], text: "Muralla romana (UNESCO) para estirar las piernas y comer." },
         { t: "17:00", name: "Praia das Catedrais", coords: [43.5545,-7.1569], text: "Arcos de roca erosionados por el mar. Solo se camina bien con marea baja.", tip: "Consulta la tabla de mareas y comprueba si requiere autorización previa en esas fechas." }
       ]
     },
     {
-      n: 10, date: "Lun 19", from: "Ribadeo", to: "Covadonga", country: "España · Asturias",
-      km: 190, h: 2.8, tag: "Picos de Europa",
-      route: [[43.5352,-7.0420],[43.3510,-5.1290],[43.3086,-5.0553]],
-      night: { name: "Cangas de Onís", coords: [43.3510,-5.1290], note: "Camping o área de autocaravanas en Cangas de Onís o Covadonga (a confirmar)." },
-      summary: "Cruzas Asturias por la costa hasta Cangas de Onís. En octubre los hayedos están en pleno otoño.",
+      n: 8, date: "Sáb 17", from: "Ribadeo", to: "Oviedo", country: "España · Asturias",
+      km: 175, h: 2.6, tag: "Cudillero y Oviedo",
+      route: [[43.5352,-7.0420],[43.5622,-6.1450],[43.3614,-5.8494]],
+      night: { name: "Oviedo", coords: [43.3614,-5.8494], note: "Área de autocaravanas o camping cerca de Oviedo (a confirmar)." },
+      summary: "Costa occidental asturiana: pueblo de pescadores de Cudillero y noche en Oviedo para cenar sidra y platos asturianos.",
       stops: [
-        { t: "13:00", name: "Cangas de Onís", coords: [43.3510,-5.1290], text: "Puente romano con la Cruz de la Victoria. Comer una fabada o un cachopo." },
-        { t: "15:30", name: "Santuario de Covadonga", coords: [43.3086,-5.0553], text: "Basílica, Santa Cueva y cascada. Lugar fundacional de Asturias." },
-        { t: "17:00", name: "Lagos de Covadonga", coords: [43.2705,-4.9847], text: "Enol y Ercina, dentro de Picos de Europa. Ruta circular sencilla de ~6 km con miradores.", tip: "El acceso en vehículo está regulado y la carretera es estrecha: pregunta en la oficina de turismo si se puede subir o toca bus." }
+        { t: "12:00", name: "Cudillero", coords: [43.5622,-6.1450], text: "Pueblo en anfiteatro sobre el puerto. Pescado fresco en el muelle.", tip: "Aparca arriba, a la entrada del pueblo: abajo no se puede con autocaravana." },
+        { t: "17:00", name: "Casco antiguo de Oviedo", coords: [43.3614,-5.8494], text: "Catedral, plaza del Fontán y la calle Gascona, el bulevar de la sidra." }
       ]
     },
     {
-      n: 11, date: "Mar 20", from: "Covadonga", to: "San Sebastián", country: "España · Cantabria / Euskadi",
-      km: 400, h: 5.0, tag: "Bilbao y San Sebastián",
-      route: [[43.3086,-5.0553],[43.2630,-2.9350],[43.3183,-1.9812]],
-      night: { name: "San Sebastián", coords: [43.3183,-1.9812], note: "Camping Igueldo, sobre la bahía de La Concha (confirmar apertura)." },
-      summary: "Día exigente (~5 h de conducción). Salida a las 08:00 para estar en Bilbao a mediodía y entrar en San Sebastián con luz.",
+      n: 9, date: "Dom 18", from: "Oviedo", to: "Covadonga", country: "España · Asturias",
+      km: 90, h: 1.5, tag: "Picos de Europa",
+      route: [[43.3614,-5.8494],[43.3510,-5.1290],[43.3086,-5.0553]],
+      night: { name: "Cangas de Onís", coords: [43.3510,-5.1290], note: "Camping o área de autocaravanas en Cangas de Onís o Covadonga (a confirmar)." },
+      summary: "Mañana en Oviedo y tarde en Covadonga. En octubre los hayedos de Picos de Europa están en pleno otoño.",
       stops: [
-        { t: "12:00", name: "Bilbao: Guggenheim y ría", coords: [43.2687,-2.9340], text: "Guggenheim y Puppy por fuera, paseo junto a la ría y comida de pintxos en el Casco Viejo.", tip: "Mide la altura de tu autocaravana antes de entrar en parkings subterráneos." },
-        { t: "13:30", name: "Casco Viejo de Bilbao", coords: [43.2582,-2.9230], text: "Siete Calles, Plaza Nueva y Mercado de la Ribera." },
-        { t: "17:30", name: "San Sebastián: La Concha", coords: [43.3180,-1.9870], text: "Playa de la Concha y su paseo, Ayuntamiento y la bahía al atardecer." },
-        { t: "19:30", name: "Parte Vieja", coords: [43.3235,-1.9840], text: "Ruta de pintxos por la Parte Vieja: Gandarias, La Cuchara de San Telmo…" }
+        { t: "10:00", name: "Catedral de Oviedo y Santa María del Naranco", coords: [43.3614,-5.8494], text: "Catedral de San Salvador y, en la falda del monte, la iglesia prerrománica de Santa María del Naranco." },
+        { t: "14:30", name: "Cangas de Onís", coords: [43.3510,-5.1290], text: "Puente romano con la Cruz de la Victoria. Comer una fabada o un cachopo." },
+        { t: "16:30", name: "Santuario de Covadonga", coords: [43.3086,-5.0553], text: "Basílica, Santa Cueva y cascada. Lugar fundacional de Asturias." }
+      ]
+    },
+    {
+      n: 10, date: "Lun 19", from: "Covadonga", to: "Santander", country: "España · Asturias → Cantabria",
+      km: 180, h: 2.7, tag: "Lagos y Santillana",
+      route: [[43.3086,-5.0553],[43.3893,-4.1051],[43.4623,-3.8099]],
+      night: { name: "Santander", coords: [43.4623,-3.8099], note: "Camping en la zona de Santander / Somo (confirmar apertura en octubre)." },
+      summary: "Mañana en los Lagos de Covadonga y salida a mediodía hacia Cantabria, con parada en Santillana del Mar.",
+      stops: [
+        { t: "09:30", name: "Lagos de Covadonga", coords: [43.2705,-4.9847], text: "Enol y Ercina, dentro de Picos de Europa. Ruta circular sencilla de ~6 km con miradores.", tip: "El acceso en vehículo está regulado y la carretera es estrecha: pregunta en la oficina de turismo si se puede subir o toca bus." },
+        { t: "15:30", name: "Santillana del Mar", coords: [43.3893,-4.1051], text: "Villa medieval de piedra, con la Colegiata y casas blasonadas." },
+        { t: "18:00", name: "Santander: El Sardinero y la Magdalena", coords: [43.4723,-3.7870], text: "Paseo por la bahía, península de la Magdalena y cena de rabas." }
+      ]
+    },
+    {
+      n: 11, date: "Mar 20", from: "Santander", to: "San Sebastián", country: "España · Cantabria / Euskadi",
+      km: 205, h: 2.8, tag: "Bilbao y San Sebastián",
+      route: [[43.4623,-3.8099],[43.2630,-2.9350],[43.3183,-1.9812]],
+      night: { name: "San Sebastián", coords: [43.3183,-1.9812], note: "Camping Igueldo, sobre la bahía de La Concha (confirmar apertura)." },
+      summary: "Día mucho más ligero que antes. Mañana en Bilbao y tarde en San Sebastián con luz.",
+      stops: [
+        { t: "11:00", name: "Bilbao: Guggenheim y ría", coords: [43.2687,-2.9340], text: "Guggenheim y Puppy por fuera, paseo junto a la ría.", tip: "Mide la altura de tu autocaravana antes de entrar en parkings subterráneos." },
+        { t: "13:00", name: "Casco Viejo de Bilbao", coords: [43.2582,-2.9230], text: "Siete Calles, Plaza Nueva y pintxos en el Mercado de la Ribera." },
+        { t: "17:30", name: "San Sebastián: La Concha", coords: [43.3180,-1.9870], text: "Playa de la Concha, Ayuntamiento y la bahía al atardecer." },
+        { t: "19:30", name: "Parte Vieja", coords: [43.3235,-1.9840], text: "Ruta de pintxos: Gandarias, La Cuchara de San Telmo…" }
       ]
     },
     {
