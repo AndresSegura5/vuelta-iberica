@@ -88,6 +88,9 @@
       attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 
+    const seen = {};
+    const spread = c => { const k = c.join(','); const n = seen[k] = (seen[k] || 0) + 1; return [c[0] - (n - 1) * 0.06, c[1] + (n - 1) * 0.06]; };
+    spread(T.start.coords);
     T.days.forEach((d, i) => {
       d.group = L.layerGroup().addTo(map);
       d.stopLayer = L.layerGroup();
@@ -99,7 +102,7 @@
         all.addLayer(d.line);
       }
       const big = d.n === 12;
-      const mk = L.marker(d.night.coords, {
+      const mk = L.marker(spread(d.night.coords), {
         icon: L.divIcon({ className: '', iconSize: [32, 32], iconAnchor: [16, 16],
           html: `<div class="mk ${big ? 'big' : ''}" style="--c:${big ? '#d9643a' : d.color}">${big ? '♪' : d.n}</div>` }),
         zIndexOffset: big ? 1000 : 0
