@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Vuelta Ibérica · Ruta en autocaravana</title>
+<meta name="description" content="Málaga – Portugal – Galicia – Asturias – País Vasco – Pamplona – Málaga. 10 al 24 de octubre de 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-sky"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">Diario de ruta · autocaravana</p>
+    <h1>La Vuelta <em>Ibérica</em></h1>
+    <p class="lead">Málaga → Portugal → Galicia → Asturias → País Vasco → <strong>Pamplona</strong> → Málaga</p>
+    <p class="dates">10 — 24 octubre 2026</p>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="concert">
+      <span class="note">♪</span>
+      <div><b>Fecha fija:</b> Morat · Navarra Arena, Pamplona<br><span>Miércoles 21 de octubre · 20:00</span></div>
+    </div>
+  </div>
+
+  <div class="road" aria-hidden="true">
+    <svg viewBox="0 0 1200 220" preserveAspectRatio="none">
+      <path id="heroPath" d="M-20,170 C160,60 300,210 470,120 S780,20 960,110 S1130,170 1230,80" />
+    </svg>
+    <div class="van">
+      <svg viewBox="0 0 120 64" width="84" height="45">
+        <rect x="4" y="10" width="84" height="38" rx="9" fill="#fffaf1"/>
+        <path d="M88 20h14a8 8 0 0 1 7 4l7 12a6 6 0 0 1 1 3v9H88z" fill="#e9b44c"/>
+        <rect x="14" y="18" width="22" height="14" rx="3" fill="#0f4c5c"/>
+        <rect x="42" y="18" width="22" height="14" rx="3" fill="#0f4c5c"/>
+        <path d="M94 26h10l5 9H94z" fill="#bfe3e0"/>
+        <rect x="4" y="38" width="84" height="5" fill="#d9643a"/>
+        <circle cx="26" cy="50" r="8" fill="#14212b"/><circle cx="26" cy="50" r="3" fill="#fffaf1"/>
+        <circle cx="92" cy="50" r="8" fill="#14212b"/><circle cx="92" cy="50" r="3" fill="#fffaf1"/>
+      </svg>
+    </div>
+  </div>
+  <a class="scroll-hint" href="#ruta">Ver la ruta ↓</a>
+</header>
+
+<nav class="daybar" id="daybar" aria-label="Días del viaje">
+  <button class="chip chip-all" id="btnAll">Toda la ruta</button>
+  <div class="chips" id="chips"></div>
+</nav>
+
+<main class="layout" id="ruta">
+  <section class="content">
+
+    <div class="block">
+      <h2>Kilómetros por día</h2>
+      <p class="sub">Los días de más carretera, de un vistazo. <span id="liveStatus" class="live">calculando por carretera…</span></p>
+      <div class="bars" id="bars"></div>
+    </div>
+
+    <div id="days"></div>
+
+    <div class="block">
+      <h2>Consejos de autocaravana</h2>
+      <div class="tips" id="tips"></div>
+    </div>
+
+    <div class="block">
+      <h2>Antes de salir</h2>
+      <p class="sub">Tu lista de tareas (se guarda en este navegador).</p>
+      <ul class="checklist" id="checklist"></ul>
+    </div>
+
+    <footer class="foot">
+      <p>Kilómetros y horas se recalculan con OSRM (OpenStreetMap) y llevan ~10 % de margen para autocaravana. Los campings y áreas son <b>sugerencias a confirmar</b>: comprueba apertura, precio y reglas locales de pernocta antes de ir.</p>
+      <p>Mapa © OpenStreetMap</p>
+    </footer>
+  </section>
+
+  <aside class="map-wrap">
+    <div id="map"></div>
+    <div class="map-card" id="mapCard"></div>
+  </aside>
+</main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
