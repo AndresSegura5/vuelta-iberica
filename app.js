@@ -64,17 +64,6 @@
 
   function renderExtras() {
     $('#tips').innerHTML = T.tips.map(t => `<div class="tip-card"><div class="ic">${t.icon}</div><h4>${t.title}</h4><p>${t.text}</p></div>`).join('');
-    let saved = {};
-    try { saved = JSON.parse(localStorage.getItem('vi-check') || '{}'); } catch (e) {}
-    const ul = $('#checklist');
-    T.checklist.forEach((txt, i) => {
-      const li = el('li', '', `<label><input type="checkbox" ${saved[i] ? 'checked' : ''}><span>${txt}</span></label>`);
-      li.querySelector('input').onchange = e => {
-        saved[i] = e.target.checked;
-        try { localStorage.setItem('vi-check', JSON.stringify(saved)); } catch (er) {}
-      };
-      ul.appendChild(li);
-    });
   }
 
   /* ───── Mapa ───── */
