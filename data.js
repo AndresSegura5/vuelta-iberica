@@ -126,13 +126,13 @@ window.TRIP = {
     },
     {
       n: 11, date: "Mar 20", from: "Santander", to: "San Sebastián", country: "España · Cantabria / Euskadi",
-      km: 205, h: 2.8, tag: "Bilbao y San Sebastián",
-      route: [[43.4623,-3.8099],[43.2630,-2.9350],[43.3183,-1.9812]],
+      km: 205, h: 2.8, tag: "Costa vasca y San Sebastián",
+      route: [[43.4623,-3.8099],[43.3836,-3.2192],[43.3036,-2.2064],[43.3183,-1.9812]],
       night: { name: "San Sebastián", coords: [43.3183,-1.9812], note: "Camping Igueldo, sobre la bahía de La Concha (confirmar apertura)." },
-      summary: "Día mucho más ligero que antes. Mañana en Bilbao y tarde en San Sebastián con luz.",
+      summary: "Día ligero por la costa: Castro Urdiales, Getaria y tarde con luz en San Sebastián. Bilbao y el Guggenheim los dejamos para la bajada, con un día entero para visitarlos por dentro.",
       stops: [
-        { t: "11:00", name: "Bilbao: Guggenheim y ría", coords: [43.2687,-2.9340], text: "Guggenheim y Puppy por fuera, paseo junto a la ría.", tip: "Mide la altura de tu autocaravana antes de entrar en parkings subterráneos." },
-        { t: "13:00", name: "Casco Viejo de Bilbao", coords: [43.2582,-2.9230], text: "Siete Calles, Plaza Nueva y pintxos en el Mercado de la Ribera." },
+        { t: "11:00", name: "Castro Urdiales", coords: [43.3836,-3.2192], text: "Casco marinero con la iglesia gótica de Santa María y el castillo-faro junto al puerto. Café y paseo." },
+        { t: "15:30", name: "Getaria", coords: [43.3036,-2.2064], text: "Pueblo pesquero con parrillas de pescado a la brasa en el puerto y viñedos de txakoli. Museo Balenciaga si hay tiempo." },
         { t: "17:30", name: "San Sebastián: La Concha", coords: [43.3180,-1.9870], text: "Playa de la Concha, Ayuntamiento y la bahía al atardecer." },
         { t: "19:30", name: "Parte Vieja", coords: [43.3235,-1.9840], text: "Ruta de pintxos: Gandarias, La Cuchara de San Telmo…" }
       ]
@@ -150,38 +150,40 @@ window.TRIP = {
       ]
     },
     {
-      n: 13, date: "Jue 22", from: "Pamplona", to: "Teruel", country: "España · Aragón",
-      km: 345, h: 3.8, tag: "Zaragoza y Teruel",
-      route: [[42.8125,-1.6458],[41.6488,-0.8891],[40.3456,-1.1065]],
-      night: { name: "Teruel", coords: [40.3456,-1.1065], note: "Área de autocaravanas de Teruel (a confirmar)." },
-      summary: "Empieza el regreso por el interior. Parada larga en Zaragoza y noche en Teruel, capital del mudéjar.",
+      n: 13, date: "Jue 22", from: "Pamplona", to: "Bilbao", country: "España · Navarra → Euskadi",
+      km: 160, h: 2.2, tag: "Guggenheim y Bilbao",
+      route: [[42.8125,-1.6458],[42.8467,-2.6726],[43.2630,-2.9350]],
+      night: { name: "Bilbao", coords: [43.2630,-2.9350], note: "Camping Kobetas (sobre la ciudad) o área de autocaravanas de Bilbao (a confirmar apertura en octubre)." },
+      summary: "Resaca de concierto sin prisa: salida a media mañana por la AP-68/A-1 y tarde completa en Bilbao, con el Guggenheim por dentro y noche de pintxos.",
       stops: [
-        { t: "11:30", name: "Zaragoza: Basílica del Pilar", coords: [41.6563,-0.8785], text: "Basílica del Pilar, La Seo, la Aljafería y tapeo en El Tubo." },
-        { t: "18:00", name: "Teruel: Plaza del Torico", coords: [40.3446,-1.1070], text: "Torres mudéjares (UNESCO), la escalinata y el mausoleo de los Amantes." }
+        { t: "10:30", name: "Salida de Pamplona", coords: [42.8125,-1.6458], text: "Desayuno tranquilo en el camping y carretera hacia Bilbao (~2 h)." },
+        { t: "13:30", name: "Casco Viejo de Bilbao", coords: [43.2582,-2.9230], text: "Siete Calles, Plaza Nueva y pintxos en el Mercado de la Ribera.", tip: "Mide la altura de tu autocaravana antes de entrar en parkings subterráneos." },
+        { t: "16:00", name: "Museo Guggenheim", coords: [43.2687,-2.9340], text: "Visita por dentro: la colección, las exposiciones temporales y «La materia del tiempo» de Serra, además del Puppy y la Maman en el exterior. Cuenta con 2–3 horas.", tip: "Compra la entrada online con hora y comprueba el horario: suele abrir de 10:00 a 19:00, con cierres puntuales." },
+        { t: "19:30", name: "Ría y Zubizuri", coords: [43.2688,-2.9457], text: "Paseo por la ría hasta el puente de Calatrava y cena de pintxos en el Casco Viejo." }
       ]
     },
     {
-      n: 14, date: "Vie 23", from: "Teruel", to: "Murcia", country: "España · Aragón → Murcia",
-      km: 430, h: 5.0, tag: "Albarracín y descenso",
-      route: [[40.3456,-1.1065],[40.4067,-1.4433],[38.9943,-1.8585],[37.9922,-1.1307]],
-      night: { name: "Murcia", coords: [37.9922,-1.1307], note: "Camping o área de autocaravanas en Murcia (a confirmar)." },
-      summary: "Etapa larga: mañana en Albarracín, uno de los pueblos más bonitos de España, y descenso por Albacete hasta Murcia.",
+      n: 14, date: "Vie 23", from: "Bilbao", to: "Toledo", country: "España · Euskadi → Castilla-La Mancha",
+      km: 500, h: 5.6, tag: "Burgos y Toledo",
+      route: [[43.2630,-2.9350],[42.3440,-3.6970],[40.4168,-3.7038],[39.8628,-4.0273]],
+      night: { name: "Toledo", coords: [39.8628,-4.0273], note: "Camping El Greco o área de autocaravanas de Toledo (a confirmar apertura en octubre)." },
+      summary: "Primera mitad de la bajada: por la A-1 hasta Burgos, bordeando Madrid hasta Toledo. Sales temprano, comes en Burgos y llegas con luz para ver la ciudad.",
       stops: [
-        { t: "09:30", name: "Albarracín", coords: [40.4067,-1.4433], text: "Casco medieval rojizo, murallas y calles empinadas. Café y paseo antes de bajar al sur.", tip: "Aparca fuera del casco: calles estrechas." },
-        { t: "14:00", name: "Albacete (parada de comida)", coords: [38.9943,-1.8585], text: "Parada de comida: atascaburras, gazpachos manchegos y la Catedral de San Juan." },
-        { t: "19:00", name: "Murcia: Catedral y plaza Cardenal Belluga", coords: [37.9847,-1.1284], text: "Fachada barroca de la catedral y tapeo por el centro." }
+        { t: "09:00", name: "Salida de Bilbao", coords: [43.2630,-2.9350], text: "Salida temprano por la AP-68 / A-1 hacia Burgos." },
+        { t: "11:30", name: "Burgos: Catedral", coords: [42.3408,-3.7044], text: "Catedral gótica (UNESCO) y paseo por el Espolón. Comer en el centro.", tip: "Aparca la autocaravana en el área junto al río y sube andando." },
+        { t: "17:30", name: "Toledo: casco histórico", coords: [39.8567,-4.0244], text: "Plaza de Zocodover, Catedral y las callejuelas de la judería.", tip: "Mirador del Valle al atardecer: la mejor vista de la ciudad." }
       ]
     },
     {
-      n: 15, date: "Sáb 24", from: "Murcia", to: "Málaga", country: "España · Murcia → Andalucía",
-      km: 410, h: 4.5, tag: "Regreso a casa",
-      route: [[37.9922,-1.1307],[37.6779,-1.7017],[37.1773,-3.5986],[36.7213,-4.4214]],
+      n: 15, date: "Sáb 24", from: "Toledo", to: "Málaga", country: "España · Castilla-La Mancha → Andalucía",
+      km: 510, h: 5.4, tag: "Regreso a casa",
+      route: [[39.8628,-4.0273],[38.9863,-3.9291],[37.8882,-4.7794],[36.7213,-4.4214]],
       night: { name: "Málaga · fin del viaje", coords: [36.7213,-4.4214], note: "Fin del viaje: Málaga." },
-      summary: "Último tramo por Lorca, Granada y Málaga. Puedes parar en Guadix (barrio de las cuevas) o hacer una visita rápida al castillo de Lorca.",
+      summary: "Último tramo por la A-4: Ciudad Real, Córdoba y Málaga por la A-45. Parada larga en Córdoba para comer y estirar las piernas.",
       stops: [
-        { t: "10:30", name: "Castillo de Lorca (opcional)", coords: [37.6759,-1.7010], text: "La Fortaleza del Sol, con vistas a la ciudad y parque temático medieval. Opcional si vas bien de tiempo." },
-        { t: "13:30", name: "Guadix · Barrio de las Cuevas", coords: [37.3000,-3.1330], text: "Casas-cueva y la Alcazaba. Parada de comida a medio camino." },
-        { t: "17:00", name: "Llegada a Málaga", coords: [36.7213,-4.4214], text: "Fin de los 15 días y de la vuelta ibérica." }
+        { t: "09:30", name: "Toledo: despedida", coords: [39.8628,-4.0273], text: "Paseo matinal opcional por el casco antes de salir hacia el sur." },
+        { t: "13:30", name: "Córdoba: Mezquita-Catedral", coords: [37.8789,-4.7794], text: "Mezquita-Catedral y paseo por la Judería. Parada de comida a medio camino.", tip: "Aparca fuera del casco, junto al Guadalquivir." },
+        { t: "17:30", name: "Llegada a Málaga", coords: [36.7213,-4.4214], text: "Fin de los 15 días y de la vuelta ibérica." }
       ]
     }
   ],
@@ -199,6 +201,7 @@ window.TRIP = {
     "Comprobar mareas para As Catedrais (Ribadeo)",
     "Preguntar acceso en vehículo a los Lagos de Covadonga",
     "Reservar camping Pamplona para la noche del 21",
+    "Comprar entrada del Guggenheim con hora (Bilbao, jue 22)",
     "Dispositivo de peaje Via Verde / EASYToll",
     "Confirmar apertura en octubre de cada camping/área",
     "Revisión de la autocaravana: neumáticos, aceite, gas"
